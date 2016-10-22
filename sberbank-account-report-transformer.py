@@ -121,7 +121,7 @@ def parse_date(string, format):
 
 def output_table(table):
     for row in table:
-        print '\t'.join(row)
+        print '\t'.join(row).encode('utf-8')
 
 def start_output():
     signal.signal(signal.SIGPIPE, signal.SIG_DFL)
