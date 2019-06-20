@@ -6,6 +6,9 @@ import signal
 import locale
 from datetime import datetime
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def main():
     start_output()
     args = parse_args()
