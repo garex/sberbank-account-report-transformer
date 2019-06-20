@@ -114,6 +114,7 @@ def parse_dates(table):
     return out
 
 def parse_date(string, format):
+    string = string.replace('май', 'мая')
     try:
         date = datetime.strptime(string, format)
         if date.year == 1900 :
